@@ -11,25 +11,79 @@
 
 		<link rel = "stylesheet" href = "css/style.css"> 
 		<script src = "script.js"> </script> <!-- JS (to add) -->
-
 	</head>
 	
-	<body>
-	<!-- website in conception -->
 	<header>
-		<center>
-		<div class="profile">
-			<img src="img/profile.png" alt="profile" width="100" height="100">
+		<div id="container">
+			<h4 class="header">KeFei Su</h4>
 		</div>
-		<h1 class="note">
-			<b> Website Currently Under Construction </b>
-		</h1>
-		</center>
-	 </header>
+	</header>
+	<nav>
+	</nav>
+	<body>
+		<div id= "about me" class="container">
+		</div>
 
-	
-	<nav> </nav>
+		<div id="experience" class="container">
+			<h4>Experience</h4>
 
+			<div class="experience-timeline">
+				<span>May 2019 - Present<span>
+			</div>
+			<div class="experience-section">
+				<h5 class="experience-title"> 
+					Backend & DevOps Developer at Solace Cloud.
+				</h5>
+				<ul>
+					<li> Lead the adoption of Datadog, simplifying our tech stack by replacing Graphite, Grafana, Logz.io, Filebeat, Kibana and Sensu. </li>
+					<li> Modularized Jenkins jobs and Ansible Playbooks, helping reduce weekly deployment downtime from 2hrs to under 30mins. </li>
+					<li> Designed, built and maintained RESTful backend microservices in Spring Boot, Hibernate and MySQL. </li>
+				</ul>
+			</div>
+
+			<div class="experience-timeline">
+				<span>January 2019 - May 2019<span>
+			</div>
+			<div class="experience-section">
+				<h5 class="experience-title"> 
+						Software Architect at Solace Cloud.
+				</h5>
+				<ul>
+					<li> Designed and deployed on-premise Vault (Hashicorp) cluster with consul backend in k8s rancher to securely store secrets (API Keys, Tokens, Cloud Credentials) in order to achieve SOC2 compliance. </li>
+					<li> Improved design of HA infrastructure in Azure using availability sets, allowing HA support in over a dozen new Azure Regions. </li>
+				</ul>
+			</div>
+
+			<div class="experience-timeline">
+					<span>September 2019 - December 2019<span>
+			</div>
+			<div class="experience-section">
+				<h5 class="experience-title"> 
+						Backend Developer Intern at Nuance.
+				</h5>
+				<ul>
+					<li> Unblocked the migration of MIX onto Azure by redesigning database schemas to eliminate BLOB incompatibilities with Azure’s Postgres service. </li>
+					<li> Created REST endpoint in Java (Jersey) allowing costumers to create and run projects on Nuance’s MIX Platform with older versions of NLP and NLU libraries. </li>
+					<li> Continuously integrated and updated internal and external libraries used by MIX. </li>
+					<li> Developed new commands for MIX's CLI (Command Line Interface) in Python. </li>
+				</ul>
+			</div>
+
+			<div class="experience-timeline">
+					<span>January 2018 - April 2018<span>
+			</div>
+			<div class="experience-section">
+				<h5 class="experience-title"> 
+						Performance Developer Intern at BlackBerry.
+				</h5>
+				<ul>
+					<li> Piloted new crash-testing methods to analyze the low memory performance and proposed improved memory management strategies for lower-end BlackBerry phones. </li>
+					<li> Processed, aggregated and summarized Android log data to monitor the performance and battery life of in-development Blackberry phones using Javascript and Python. </li>
+					<li> Reduced load time of webpages by restructuring legacy project and converting server-side Python scripts to output JSON instead of generating webpages using file-writes. </li>
+				</ul>
+			</div>
+
+		</div>
 
 
 	</body>
