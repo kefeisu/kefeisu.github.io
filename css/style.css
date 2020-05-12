@@ -1,14 +1,5 @@
 
 
-.header {
-	padding-top: 20px;
-	background: #3D4351;
-	color: #FFF;
-	font-weight: 300;
-	text-align: center;
-	font-size: 1.8em;
-	font-family: Arial, Helvetica, sans-serif
-}
 
 body, p, h1, h2, h3, h4, h5, h6, button, a {
 	font-family: Arial, Helvetica, sans-serif;
@@ -25,3 +16,94 @@ div.profile {
 	margin: 0 0 .5em 0;
 	white-space: nowrap;
   }
+
+/* ----- HEADER ----- */
+.ui-section {
+	width: 82.5%;
+	height: 82.5%
+}
+
+@media (min-width:768px) {
+	.ui-section {
+		max-width: 32rem
+	}
+}
+
+@media (min-width:1400px) {
+	.ui-section {
+		max-width: 36rem
+	}
+}
+
+@media (min-width:2560px) {
+	.ui-section {
+		max-width: 40rem
+	}
+}
+
+.ui-section__header {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap
+}
+
+@media (min-width:768px) {
+	.ui-section__content {
+		width: 97.5%
+	}
+}
+
+/*----- AVATAR PICTURE  -----*/
+.img--avatar {
+	font-size: 1.75rem;
+	line-height: 1.25;
+	display: none;
+	border-radius: 2px
+}
+
+@media (min-width:1400px) {
+	.img--avatar {
+		font-size: 2rem
+	}
+}
+
+@media (min-width:2560px) {
+	.img--avatar {
+		font-size: 2.25rem
+	}
+}
+
+@media (min-width:768px) {
+	.img--avatar {
+		width: auto;
+		height: auto;
+		max-height: 6.25rem;
+		margin-right: 1.125em;
+		display: block
+	}
+}
+
+@media (min-width:1400px) {
+	.img--avatar {
+		max-height: 6.875rem
+	}
+}
+
+@media (min-width:2560px) {
+	.img--avatar {
+		max-height: 7.5rem
+	}
+}
+
+.th--light .img--avatar {
+	-webkit-filter: saturate(90%) opacity(60%);
+	filter: saturate(90%) opacity(60%)
+}
+
+.th--dark .img--avatar {
+	-webkit-filter: saturate(40%) opacity(60%);
+	filter: saturate(40%) opacity(60%)
+}
