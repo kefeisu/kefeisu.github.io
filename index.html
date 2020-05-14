@@ -8,23 +8,41 @@
 
 		<title> KeFei Su </title>
 
-		<link rel = "stylesheet" href = "css/style.css"> 
-		<script src = "script.js"> </script> <!-- JS (to add) -->
+		<link rel="stylesheet" href = "assets/stylesheets/layout.css"> 
+		<link rel="stylesheet" href = "assets/stylesheets/common.css">
+		<link rel="stylesheet" href = "assets/stylesheets/toggle.css"> 
+		<link rel="stylesheet" href = "assets/stylesheets/themes/light.css"> 
+		<link rel="stylesheet" href = "assets/stylesheets/themes/dark.css"> 
+
+		<!-- JS (to add) <script src="assets/scipts/script.js"> </script>  JS (to add) -->
+
 	</head>
 	
-	<body>
-		<header>
-			<img src="img/kefei_light_theme.jpg" alt="A photo avatar of KeFei Su." class="img--avatar">
-			<div id="header-center">
-				<h4 class="header">KEFEI SU</h4>
-			</div>
-		</header>
+	<body class="profile-body">
 
-		
-		<div id= "about me" class="container">
-			<p>Full Time software developer at Solace By Day.</p>
+		<input type="checkbox" id="toggle-mode-cb" />
+
+		<div id="mode-wrapper">
+
+			<label id="toggle-mode" for="toggle-mode-cb">
+				<span class="toggle-border">
+				<span class="toggle-indicator"></span>
+				</span>
+			</label>
+
+			<main class="layout">
+				<header class="profile-header">
+					<img src="assets/img/kefei_light_theme.jpg" alt="KeFei Su." class="profile-picture">
+					<div id="header-center">
+						<h1>KEFEI SU</h1>
+						<h2>Full time software developer at Solace by day</h2>
+					</div>
+				</header>
+			</main>
+			
 		</div>
 
+<!---
 		<div id="experience" class="container">
 			<h4>Experience</h4>
 
@@ -83,9 +101,8 @@
 					<li> Reduced load time of webpages by restructuring legacy project and converting server-side Python scripts to output JSON instead of generating webpages using file-writes. </li>
 				</ul>
 			</div>
-
 		</div>
-
+	-->
 
 	</body>
 </html>
