@@ -1,0 +1,14 @@
+/*----- FONTS ---- */
+
+body, p, h1, h2, h3, h4, h5, h6, button, a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	padding: 0;
+	margin-bottom: 0.5em;
+	font-size: 0.875rem;
+	line-height: lh(loose);
+	letter-spacing: 0.0625em;
+	text-transform: uppercase;
+}
