@@ -42,34 +42,9 @@
 	background-color: #1e1e1e;
 }
 
-#mode-wrapper {
-	transition: all 0.3s ease-in-out;
-}
-
-#mode-wrapper .mode {
-	transition: all 0.3s ease-in-out;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-#mode-wrapper {
-	background-color: white;
-	color: #1e1e1e;
-}
-
 #toggle-mode-cb:checked + #mode-wrapper {
 	background-color: #1e1e1e;
-	color: gray;
-}
-
-#toggle-mode-cb:checked + #mode-wrapper .mode__light {
-	opacity: 0;
-}
-
-#toggle-mode-cb:checked + #mode-wrapper .mode__dark {
-	opacity: 1;
+	color: white;
 }
 
 #toggle-mode-cb:checked + #mode-wrapper .toggle-border {
@@ -80,4 +55,9 @@
 	background-color: white;
 	left: calc( 50px - 18px);
 	transform: rotate(180deg);
+}
+
+#mode-wrapper { 
+    transition: all 0.3s ease-in-out;
+    margin: 0;
 }
