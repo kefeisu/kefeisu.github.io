@@ -1,12 +1,12 @@
-
 /* ----- LAYOUT ----- */
 .layout {
 	width: 100%;
 	height: auto;
-	min-height: 100vh;
 	padding: 5% 0;
 	display: flex;
 	justify-content: center;
+
+	
 }
   
 /* ----- HEADER ----- */
@@ -28,7 +28,8 @@
 	font-size: 1.75rem;
 	line-height: 1.25;
 	display: none;
-	border-radius: 2px
+	border-radius: 2px;
+	transition: all 0.3s ease-in-out;
 }
 
 @media (min-width:1400px) {
