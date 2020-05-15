@@ -6,6 +6,18 @@
 	display: flex;
 	justify-content: center;
 }
+
+/*----- SOCIAL MEDIA NAV ----*/
+.social-media-nav {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+li {
+	float: left;
+	padding: 0.5rem;
+}
   
 /* ----- HEADER ----- */
 .profile-header {
@@ -23,9 +35,18 @@
 	font-weight: 700;
 	margin: 0 0 .5em 0;
 	white-space: nowrap;
-  }
+}
 
-/*----- AVATAR PICTURE  -----*/
+/*----- IMAGE ASSETS  -----*/
+.media-icon {
+	width: auto;
+	height: auto;
+	display: block;
+	margin-top: 0.75rem;
+	max-height: 1.5rem;
+	transition: all 0.3s ease-in-out;
+}
+
 .profile-picture {
 	font-size: 1.75rem;
 	line-height: 1.25;

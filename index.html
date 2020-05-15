@@ -15,25 +15,52 @@
 		<link rel="stylesheet" href = "assets/stylesheets/themes/dark.css"> 
 
 		<script src="assets/scipts/toggle.js"> </script>
-
 	</head>
 	
 	<body>
 		<input type="checkbox" id="toggle-mode-cb" />
 		<div id="mode-wrapper">
-			<label id="toggle-mode" for="toggle-mode-cb" onclick="toggleProfilePicture()">
-				<span class="toggle-border">
-				<span class="toggle-indicator"></span>
-				</span>
-			</label>
+			<nav>
+				<ul class="social-media-nav">
+					<li>
+						<a href="https://www.linkedin.com/in/kefei-su-4bb315179/" target="blank">
+							<img src="assets/img/linkedin.png" class="media-icon">
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/kefeisu" target="blank">
+							<img src="assets/img/github.png" class="media-icon">
+						</a>
+					</li>
+					<li>
+						<a href="" target="blank">
+							<img src="assets/img/resume.png" class="media-icon">
+						</a>
+					</li>
+				</ul>
+
+				<label id="toggle-mode" for="toggle-mode-cb" onclick="toggleTheme()">
+					<span class="toggle-border">
+					<span class="toggle-indicator"></span>
+					</span>
+				</label>
+			</nav>
 			<main class="layout">
 				<header class="profile-header">
 					<img src="assets/img/kefei_light_theme.jpg" alt="KeFei Su." class="profile-picture" id="profile-pic">
 					<div id="header-center">
 						<h1>KEFEI SU</h1>
-						<div class="headline">
-							<span>Full time software developer at </span>
-							<a href="https://solace.com/"> <span class="highlight"> Solace </span> </a>
+						<div id="headline--light">
+							<span> Software developer by day</span>
+							<br>
+							<span> Backend & Infrastructure at </span>
+							<a href="https://solace.com/"> <span class="highlight"> Solace<b>.</b> </span> </a>
+						</div>
+						<div id="headline--dark">
+							<span> SoundCloud rapper by night</span>
+							<br>
+							<span> Backend & Infrastructure at </span>
+							<a href="https://solace.com/"> <span class="highlight"> Solace<b>.</b> </span> </a>
 						</div>
 					</div>
 				</header>

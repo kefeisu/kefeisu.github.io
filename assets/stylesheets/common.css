@@ -15,10 +15,24 @@ h1 {
 
 body {
 	margin:0;
+	margin-top: 0;
 }
 
-.headline {
+nav {
+	margin: 0;
+}
+
+.social-media-nav {
+	list-style: none;
+}
+
+#headline--light {
 	font-size: 1.5rem;
+}
+
+#headline--dark {
+	font-size: 1.5rem;
+	display: none;
 }
 
 a {
