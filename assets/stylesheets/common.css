@@ -1,4 +1,4 @@
-/*----- FONTS ---- */
+/*----- FONTS ----*/
 
 body, p, h1, h2, h3, h4, h5, h6, button, a {
 	font-family: Arial, Helvetica, sans-serif;
@@ -11,4 +11,25 @@ h1 {
 	line-height: lh(loose);
 	letter-spacing: 0.0625em;
 	text-transform: uppercase;
+}
+
+body {
+	margin:0;
+}
+
+.headline {
+	font-size: 1.5rem;
+}
+
+a {
+	text-decoration:none;
+}
+
+a:hover {
+	opacity: 75%;
+}
+
+/*----- COLOURS -----*/
+.highlight {
+	color: #08cc94;
 }
