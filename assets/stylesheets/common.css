@@ -1,4 +1,4 @@
-/*----- FONTS ----*/
+/*----- FONT -----*/
 
 body, p, h1, h2, h3, h4, h5, h6, button, a {
 	font-family: Arial, Helvetica, sans-serif;
@@ -26,12 +26,7 @@ nav {
 	list-style: none;
 }
 
-#headline--light {
-	font-size: 1.5rem;
-}
-
 #headline--dark {
-	font-size: 1.5rem;
 	display: none;
 }
 

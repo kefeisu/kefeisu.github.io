@@ -1,3 +1,15 @@
+/*----- SOCIAL MEDIA NAV ----*/
+.social-media-nav {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+.social-media-nav li {
+	float: left;
+	padding: 0.5rem;
+}
+  
 /* ----- LAYOUT ----- */
 .layout {
 	width: 100%;
@@ -7,18 +19,6 @@
 	justify-content: center;
 }
 
-/*----- SOCIAL MEDIA NAV ----*/
-.social-media-nav {
-	margin: 0;
-	padding: 0;
-	display: inline;
-}
-
-li {
-	float: left;
-	padding: 0.5rem;
-}
-  
 /* ----- HEADER ----- */
 .profile-header {
 	display: flex;
@@ -29,12 +29,8 @@ li {
 	padding: 1.5rem;
 }
 
-/*----- EXPERIENCE INFO -----*/
-.experience-section {
-	font-size: 12px;
-	font-weight: 700;
-	margin: 0 0 .5em 0;
-	white-space: nowrap;
+.profile-header span {
+	font-size: 1.5rem;
 }
 
 /*----- IMAGE ASSETS  -----*/
@@ -55,6 +51,7 @@ li {
 	transition: all 0.3s ease-in-out;
 }
 
+/*---- SCREEN SIZING -----*/
 @media (min-width:1400px) {
 	.profile-picture {
 		font-size: 2rem

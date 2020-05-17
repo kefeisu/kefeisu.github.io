@@ -7,7 +7,7 @@ function toggleTheme() {
     var media_icons = document.getElementsByClassName("media-icon");
 
     if(theme_cb) {
-        //image.src = "assets/img/kefei_light_theme.png"
+        //set light theme
         image.src = "assets/img/kefei_light_theme.jpg";
         headline_light.style.display = "inline";
         headline_dark.style.display = "none";
@@ -15,7 +15,7 @@ function toggleTheme() {
             media_icons[i].style.filter = "none";
         }
     } else {
-        //image.src = "assets/img/kefei_dark_theme.png"
+        //set dark theme
         image.src = "assets/img/kefei.jpg";
         headline_light.style.display = "none";
         headline_dark.style.display = "inline";
