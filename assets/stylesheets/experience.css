@@ -1,0 +1,63 @@
+/*----- EXPERIENCE -----*/
+#experience {
+    width: 50%;
+    margin: auto;
+    /* remove border, use border to gage div */
+    
+}
+
+#experience span {
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+
+.experience-section {
+    display: flex;
+}
+
+.experience-timeline {
+    padding: 0.5rem;
+}
+
+/*----- TIMELINE MARKER -----*/
+.marker {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+}
+
+  .marker:before {
+    background: #08cc94;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 15px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+  .marker:after {
+    content: "";
+    width: 3px;
+    background: #CCD5DB;
+    display: block;
+    position: absolute;
+    top: 24px;
+    bottom: 0;
+    left: 6px;
+  }
+  
+  .timeline-item:last-child .timeline-marker:after {
+    content: none;
+  }
+  
+  .timeline-item:not(.period):hover .timeline-marker:before {
+    background: transparent;
+    border: 3px solid #08cc94;
+  }

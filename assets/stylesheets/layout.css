@@ -22,9 +22,9 @@
 /* ----- HEADER ----- */
 .profile-header {
 	display: flex;
+	justify-content: center;
 	flex-flow: row nowrap;
 	border:solid;
-	border-radius: 20px;
 	border-style: thin;
 	padding: 1.5rem;
 }
