@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96%;
+    --foreground: 0 0% 10%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 80%;
+  }
+
+  :root[class~="dark"] {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+
+  * {
+    @apply border-border selection:bg-secondary/20;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-sm bg-card/95 border border-white/20 shadow-lg dark:border-white/10 dark:bg-black/40;
+  }
+  
+  .section-title {
+    @apply text-3xl font-semibold mb-6 tracking-tight;
+  }
+  
+  .section-container {
+    @apply max-w-4xl mx-auto px-4 py-16 sm:py-24;
+  }
+}
+
+.timeline-container {
+  @apply relative pl-8 border-l border-secondary/30;
+}
+
+.timeline-dot {
+  @apply absolute w-4 h-4 bg-secondary rounded-full -left-2 mt-1.5;
+}
+
+.experience-card {
+  @apply glass-card p-6 rounded-lg mb-8 transform transition-all duration-300 hover:translate-y-[-4px];
+}

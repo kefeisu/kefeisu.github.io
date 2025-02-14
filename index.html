@@ -1,129 +1,18 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile-page-painter</title>
+    <meta name="description" content="Lovable Generated Project" />
+    <meta name="author" content="Lovable" />
+    <meta property="og:image" content="/og-image.png" />
+  </head>
 
-<html lang = "en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<title> KeFei Su </title>
-
-		<link rel="stylesheet" href = "assets/stylesheets/layout.css"> 
-		<link rel="stylesheet" href = "assets/stylesheets/common.css">
-		<link rel="stylesheet" href = "assets/stylesheets/toggle.css"> 
-		<link rel="stylesheet" href = "assets/stylesheets/experience.css">
-
-		<script src="assets/scipts/toggle.js"> </script>
-	</head>
-	
-	<body>
-		<input type="checkbox" id="toggle-mode-cb" />
-		<div id="mode-wrapper">
-			<nav>
-				<ul class="social-media-nav">
-					<li>
-						<a href="https://www.linkedin.com/in/kefei-su-4bb315179/" target="_blank">
-							<img src="assets/img/linkedin.png" class="media-icon">
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/kefeisu" target="_blank">
-							<img src="assets/img/github.png" class="media-icon">
-						</a>
-					</li>
-					<li>
-						<a href="assets/files/CV.pdf">
-							<img src="assets/img/resume.png" class="media-icon">
-						</a>
-					</li>
-				</ul>
-
-				<label id="toggle-mode" for="toggle-mode-cb" onclick="toggleTheme()">
-					<span class="toggle-border">
-					<span class="toggle-indicator"></span>
-					</span>
-				</label>
-			</nav>
-			
-			<main class="layout">
-				<header class="profile-header">
-					<img src="assets/img/kefei_light_theme.jpg" alt="KeFei Su." class="profile-picture" id="profile-pic">
-					<div>
-						<h1>KEFEI SU</h1>
-							<span id= "headline--light"> Software developer by day</span>
-							<span id="headline--dark"> SoundCloud rapper by night</span>
-							<br>
-							<span> Backend & Infrastructure at </span>
-							<a href="https://solace.com/"> <span class="highlight"> Solace<b>.</b> </span> </a>
-					</div>
-				</header>
-			</main>
-
-			<div id="experience">
-				<span>Experience</span>
-		
-				<div class="experience-section">
-					<div class="marker"></div>
-					<div class="experience-timeline">
-						<p>May 2019 - Present</p>
-						<h5 class="experience-title"> 
-							Backend & DevOps Developer at Solace Cloud.
-						</h5>
-						<ul>
-							<li> Lead the adoption of Datadog, simplifying our tech stack by replacing Graphite, Grafana, Logz.io, Filebeat, Kibana and Sensu. </li>
-							<li> Modularized Jenkins jobs and Ansible Playbooks, helping reduce weekly deployment downtime from 2hrs to under 30mins. </li>
-							<li> Designed, built and maintained RESTful backend microservices in Spring Boot, Hibernate and MySQL. </li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="experience-section">
-					<div class="marker"></div>
-					<div class="experience-timeline">
-						<p>January 2019 - May 2019</p>
-				
-						<h5 class="experience-title"> 
-								Software Architect at Solace Cloud.
-						</h5>
-						<ul>
-							<li> Designed and deployed on-premise Vault (Hashicorp) cluster with consul backend in k8s rancher to securely store secrets (API Keys, Tokens, Cloud Credentials) in order to achieve SOC2 compliance. </li>
-							<li> Improved design of HA infrastructure in Azure using availability sets, allowing HA support in over a dozen new Azure Regions. </li>
-						</ul>
-					</div>
-				</div>
-		
-				<div class="experience-section">
-					<div class="marker"></div>
-					<div class="experience-timeline">
-						<p>September 2019 - December 2019</p>
-						<h5 class="experience-title"> 
-								Backend Developer Intern at Nuance.
-						</h5>
-						<ul>
-							<li> Unblocked the migration of MIX onto Azure by redesigning database schemas to eliminate BLOB incompatibilities with Azure’s Postgres service. </li>
-							<li> Created REST endpoint in Java (Jersey) allowing costumers to create and run projects on Nuance’s MIX Platform with older versions of NLP and NLU libraries. </li>
-							<li> Continuously integrated and updated internal and external libraries used by MIX. </li>
-							<li> Developed new commands for MIX's CLI (Command Line Interface) in Python. </li>
-						</ul>
-					</div>;
-				</div>
-		
-				<div class="experience-section">
-					<div class="marker"></div>
-					<div class="experience-timeline">
-						<p>January 2018 - April 2018</p>
-						<h5 class="experience-title"> 
-								Performance Developer Intern at BlackBerry.
-						</h5>
-						<ul>
-							<li> Piloted new crash-testing methods to analyze the low memory performance and proposed improved memory management strategies for lower-end BlackBerry phones. </li>
-							<li> Processed, aggregated and summarized Android log data to monitor the performance and battery life of in-development Blackberry phones using Javascript and Python. </li>
-							<li> Reduced load time of webpages by restructuring legacy project and converting server-side Python scripts to output JSON instead of generating webpages using file-writes. </li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</body>
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
